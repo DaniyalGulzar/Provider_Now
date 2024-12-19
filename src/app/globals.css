@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-size: revert;
+  font-weight: revert;
+  margin-bottom: 10px;
+}
+
+ol,
+ul,
+menu {
+  list-style: revert;
+  margin: revert;
+  padding: revert;
+}
+
+.css-1p3m7a8-multiValue {
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.m-0-imp {
+  margin: 0 !important;
+}
+
+.loading-spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* 50% transparent black */
+  z-index: 9999;
+  /* Make sure the overlay is on top of other elements */
+}
+
+.text-13C1E8 {
+  color: #13c1e8;
+}
+
+.text-631681 {
+  color: #631681;
+}
+
+.text-4B0082 {
+  color: #4b0082;
+}
+
+.content-side {
+  flex: 1;
+  background: linear-gradient(180deg, #491161 0%, #721a97 99%);
+}
+
+.input {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-lg mb-2 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.btn {
+  @apply px-4 py-2 bg-blue-500 text-white rounded-lg font-semibold transition duration-200 hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+.bg-800080 {
+  background-color: #800080;
+}
+
+.bg-F8F9FB {
+  background-color: #f8f9fb;
+}
+
+/* Button styling */
+.button-wrapper button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #4b0066;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-wrapper button:hover {
+  background-color: #870ab4;
+}
+
+/* Line styling */
+.line {
+  height: 1px;
+  background-color: #dfd5d5;
+  margin: 20px 0;
+}
+
+/* Hide number input spinner in Webkit browsers (Chrome, Safari) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide number input spinner in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
